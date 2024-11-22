@@ -1,0 +1,28 @@
+﻿@model IEnumerable<ProdutosModel>
+
+
+@{
+}
+
+<link href="~/css/Produtos/Produtos.css" rel="stylesheet" />
+
+<div class="div_titulo">
+    <h1>Tech</h1>
+</div>
+
+<div class="Conteudo">
+    @foreach (var item in Model)
+    {
+        <div class="div_item">
+            <div>
+                <h4>@item.Nome</h4>
+            </div>
+            <div>
+                <p>R$ @item.Price</p>
+            </div>
+            <div>
+                <button>Comprar</button>
+            </div>
+        </div>
+    }
+</div>

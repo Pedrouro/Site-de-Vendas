@@ -1,0 +1,25 @@
+﻿body {
+}
+
+.div_titulo {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.Conteudo {
+    width: 100%;
+/*    height:  2000px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    
+}
+
+.div_item{
+    width: 20%;
+    height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 80px;
+}

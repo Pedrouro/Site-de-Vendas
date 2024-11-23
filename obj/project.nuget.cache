@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o2BFGDb7TJ0=",
+  "dgSpecHash": "I2p9PldiHJk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\SiteDeVendas\\SiteDeVendas.csproj",
+  "projectFilePath": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\SiteDeVendas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pedrouro\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Pedrouro\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

@@ -7,22 +7,26 @@
 <link href="~/css/Produtos/Produtos.css" rel="stylesheet" />
 
 <div class="div_titulo">
-    <h1>Tech</h1>
+    <h1>@Model.First().Tipo</h1>
 </div>
 
 <div class="Conteudo">
     @foreach (var item in Model)
     {
         <div class="div_item">
-            <div>
+
+            <div class="div_nome">
                 <h4>@item.Nome</h4>
             </div>
-            <div>
+
+            <div class="div_preco">
                 <p>R$ @item.Price</p>
             </div>
-            <div>
-                <button>Comprar</button>
+
+            <div class="div_botao">
+                <a class="btn btn-secondary" asp-controller="Produtos" asp-action="Detalhes" asp-route-id="@item.ProdutoID">Ver Produto</a>
             </div>
+
         </div>
     }
 </div>

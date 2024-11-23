@@ -13,7 +13,14 @@ namespace SiteDeVendas.Controllers
         }
         public IActionResult Index()
         {
-            var produtos = _context.Produtos.ToList();
+            return View();
+        }
+
+        public IActionResult VisualizarProdutos(string tipo)
+        {
+            var produtos = _context.Produtos.
+                Where(x => x.Tipo == tipo).ToList();
+
             return View(produtos);
         }
 
@@ -31,6 +38,12 @@ namespace SiteDeVendas.Controllers
             var produtos = _context.Produtos.
                 Where(x => x.Tipo == "Tech" && x.Ativo == true).ToList();
             return View(produtos);
+        }
+
+        public IActionResult Detalhes(int id)
+        {
+            var item = _context.Produtos.FirstOrDefault(x => x.ProdutoID == id);
+            return View(item);
         }
     }
 }

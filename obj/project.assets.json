@@ -4045,11 +4045,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\SiteDeVendas\\SiteDeVendas.csproj",
+      "projectUniqueName": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\SiteDeVendas.csproj",
       "projectName": "SiteDeVendas",
-      "projectPath": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\SiteDeVendas\\SiteDeVendas.csproj",
+      "projectPath": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\SiteDeVendas.csproj",
       "packagesPath": "C:\\Users\\Pedrouro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\SiteDeVendas\\obj\\",
+      "outputPath": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Pedrouro\\AppData\\Roaming\\NuGet\\NuGet.Config",

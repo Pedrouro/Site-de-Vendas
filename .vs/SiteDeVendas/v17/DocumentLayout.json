@@ -7,6 +7,22 @@
       "RelativeMoniker": "D:0:0:{853E2E10-46B3-408E-9C1E-1E0CE393C314}|SiteDeVendas.csproj|solutionrelative:controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{853E2E10-46B3-408E-9C1E-1E0CE393C314}|SiteDeVendas.csproj|c:\\users\\pedrouro\\desktop\\codigos\\projetos\\site-de-vendas\\interfaces\\iprodutosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{853E2E10-46B3-408E-9C1E-1E0CE393C314}|SiteDeVendas.csproj|solutionrelative:interfaces\\iprodutosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853E2E10-46B3-408E-9C1E-1E0CE393C314}|SiteDeVendas.csproj|c:\\users\\pedrouro\\desktop\\codigos\\projetos\\site-de-vendas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{853E2E10-46B3-408E-9C1E-1E0CE393C314}|SiteDeVendas.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853E2E10-46B3-408E-9C1E-1E0CE393C314}|SiteDeVendas.csproj|c:\\users\\pedrouro\\desktop\\codigos\\projetos\\site-de-vendas\\repository\\produtosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{853E2E10-46B3-408E-9C1E-1E0CE393C314}|SiteDeVendas.csproj|solutionrelative:repository\\produtosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853E2E10-46B3-408E-9C1E-1E0CE393C314}|SiteDeVendas.csproj|c:\\users\\pedrouro\\desktop\\codigos\\projetos\\site-de-vendas\\sitedevendas.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{853E2E10-46B3-408E-9C1E-1E0CE393C314}|SiteDeVendas.csproj|solutionrelative:sitedevendas.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{853E2E10-46B3-408E-9C1E-1E0CE393C314}|SiteDeVendas.csproj|c:\\users\\pedrouro\\desktop\\codigos\\projetos\\site-de-vendas\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{853E2E10-46B3-408E-9C1E-1E0CE393C314}|SiteDeVendas.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -42,36 +58,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAACgAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-23T21:32:43.061Z",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T01:02:38.144Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-23T21:31:11.281Z"
+              "DocumentIndex": 3,
+              "Title": "ProdutosRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\Repository\\ProdutosRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\ProdutosRepository.cs",
+              "ToolTip": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\Repository\\ProdutosRepository.cs",
+              "RelativeToolTip": "Repository\\ProdutosRepository.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T00:12:09Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
+              "Title": "IProdutosRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\Interfaces\\IProdutosRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IProdutosRepository.cs",
+              "ToolTip": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\Interfaces\\IProdutosRepository.cs",
+              "RelativeToolTip": "Interfaces\\IProdutosRepository.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwAoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T00:04:21.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SiteDeVendas",
+              "DocumentMoniker": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\SiteDeVendas.csproj",
+              "RelativeDocumentMoniker": "SiteDeVendas.csproj",
+              "ToolTip": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\SiteDeVendas.csproj",
+              "RelativeToolTip": "SiteDeVendas.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-24T00:00:43.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Detalhes.css",
               "DocumentMoniker": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\wwwroot\\css\\Produtos\\Detalhes.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\Produtos\\Detalhes.css",
@@ -83,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Produtos.css",
               "DocumentMoniker": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\wwwroot\\css\\Produtos\\Produtos.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\Produtos\\Produtos.css",
@@ -95,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Detalhes.cshtml",
               "DocumentMoniker": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\Views\\Produtos\\Detalhes.cshtml",
               "RelativeDocumentMoniker": "Views\\Produtos\\Detalhes.cshtml",
@@ -113,14 +156,38 @@
               "RelativeDocumentMoniker": "Controllers\\ProdutosController.cs",
               "ToolTip": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\Controllers\\ProdutosController.cs",
               "RelativeToolTip": "Controllers\\ProdutosController.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAqwA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwBoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-23T13:20:13.618Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-23T21:31:11.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAACgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T21:32:43.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "VisualizarProdutos.cshtml",
               "DocumentMoniker": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\Views\\Produtos\\VisualizarProdutos.cshtml",
               "RelativeDocumentMoniker": "Views\\Produtos\\VisualizarProdutos.cshtml",
@@ -128,12 +195,11 @@
               "RelativeToolTip": "Views\\Produtos\\VisualizarProdutos.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-23T22:09:58.104Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T22:09:58.104Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\Views\\Produtos\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Produtos\\Index.cshtml",
@@ -141,8 +207,7 @@
               "RelativeToolTip": "Views\\Produtos\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-23T21:36:00.837Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T21:36:00.837Z"
             }
           ]
         }

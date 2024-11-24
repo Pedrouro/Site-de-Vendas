@@ -1,49 +1,35 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SiteDeVendas.Data;
+using SiteDeVendas.Interfaces;
+using SiteDeVendas.Models;
 
 namespace SiteDeVendas.Controllers
 {
     public class ProdutosController : Controller
     {
-        private readonly ProjetoDbContext _context;
+        private readonly IProdutosRepository _produtosRepository;
 
-        public ProdutosController(ProjetoDbContext context)
+        public ProdutosController(IProdutosRepository produtosRepository)
         {
-            _context = context;
+            _produtosRepository = produtosRepository;
         }
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult VisualizarProdutos(string tipo)
+        public async Task<IActionResult> VisualizarProdutos(string tipo)
         {
-            var produtos = _context.Produtos.
-                Where(x => x.Tipo == tipo).ToList();
+            IEnumerable<ProdutosModel> produtos = await _produtosRepository.GetByTipoAsync(tipo);
 
             return View(produtos);
         }
 
-        public IActionResult Comidas()
-        {
-            var produtos = _context.Produtos.
-                Where(u => u.Tipo == "Comida")
-                .ToList();
 
-            return View(produtos);
-        }
-
-        public IActionResult Tech()
+        public async Task<IActionResult> Detalhes(int id)
         {
-            var produtos = _context.Produtos.
-                Where(x => x.Tipo == "Tech" && x.Ativo == true).ToList();
-            return View(produtos);
-        }
-
-        public IActionResult Detalhes(int id)
-        {
-            var item = _context.Produtos.FirstOrDefault(x => x.ProdutoID == id);
-            return View(item);
+            ProdutosModel produto = await _produtosRepository.GetByIdAsync(id);
+            return View(produto);
         }
     }
 }

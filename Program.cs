@@ -1,10 +1,13 @@
 using Microsoft.EntityFrameworkCore;
 using SiteDeVendas.Data;
+using SiteDeVendas.Interfaces;
+using SiteDeVendas.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<IProdutosRepository, ProdutosRepository>();
 builder.Services.AddDbContext<ProjetoDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));

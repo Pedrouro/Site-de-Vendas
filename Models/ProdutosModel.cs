@@ -11,6 +11,7 @@ namespace SiteDeVendas.Models
         public int Quantidade { get; set; }
         public bool Ativo { get; set; }
         public float Price { get; set;  }
+        //public string imagem { get; set; }
 
     }
 }

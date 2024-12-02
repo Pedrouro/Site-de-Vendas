@@ -1,0 +1,41 @@
+﻿@model ProdutosModel
+
+<link href="~/css/Produtos/Create.css" rel="stylesheet" />
+
+<h1>Cadastrar Produto</h1>
+
+<form asp-action="Create" method="post">
+    
+    <div>
+        <label asp-for="Nome">Nome: </label><br />
+        <input asp-for="Nome" value=""/>
+    </div>
+
+    <div>
+        <label asp-for="Tipo">Tipo: </label><br />
+        <input asp-for="Tipo" value=""/>
+    </div>
+
+    <div>
+        <label asp-for="Quantidade">Quantidade: </label><br />
+        <input asp-for="Quantidade" value="" />
+    </div>
+
+    <div>
+        <label asp-for="Price">Preço: </label><br />
+        <input asp-for="Price" value="" />
+    </div>
+
+    <div>
+        <label asp-for="Ativo">Ativo: </label><br />
+        <input asp-for="Ativo" type="radio" value="true" />
+        <label asp-for="Ativo">Sim</label>
+        <input asp-for="Ativo" type="radio" value="false" />
+        <label asp-for="Ativo">Não</label>
+    </div>
+
+    <div class="SubmitDiv">
+        <input type="submit" name="submit" value="cadastrar" />
+    </div>
+
+</form>

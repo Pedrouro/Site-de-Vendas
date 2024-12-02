@@ -25,7 +25,24 @@ namespace SiteDeVendas.Controllers
             return View(produtos);
         }
 
+        public IActionResult Create()
+        {
+            return View();
+        }
 
+        [HttpPost]
+        public async Task<IActionResult> Create(ProdutosModel produto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(produto);
+            }
+
+            _produtosRepository.Add(produto);
+            _produtosRepository.Save();
+
+            return RedirectToAction("Index");
+        }
         public async Task<IActionResult> Detalhes(int id)
         {
             ProdutosModel produto = await _produtosRepository.GetByIdAsync(id);

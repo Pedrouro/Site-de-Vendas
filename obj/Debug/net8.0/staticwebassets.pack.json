@@ -2,7 +2,11 @@
   "Files": [
     {
       "Id": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SiteDeVendas.bundle.scp.css",
-      "PackagePath": "staticwebassets\\SiteDeVendas.bundle.scp.css"
+      "PackagePath": "staticwebassets\\SiteDeVendas.oe9sj18h1f.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\wwwroot\\css\\Produtos\\Create.css",
+      "PackagePath": "staticwebassets\\css\\Produtos\\Create.css"
     },
     {
       "Id": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\wwwroot\\css\\Produtos\\Detalhes.css",
@@ -251,6 +255,10 @@
     {
       "Id": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SiteDeVendas.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SiteDeVendas.Microsoft.AspNetCore.StaticWebAssets.props",

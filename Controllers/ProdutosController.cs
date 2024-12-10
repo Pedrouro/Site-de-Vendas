@@ -43,6 +43,15 @@ namespace SiteDeVendas.Controllers
 
             return RedirectToAction("Index");
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(ProdutosModel produto)
+        {
+            _produtosRepository.Delete(produto);
+            _produtosRepository.Save();
+
+            return RedirectToAction("Index");
+        }
         public async Task<IActionResult> Detalhes(int id)
         {
             ProdutosModel produto = await _produtosRepository.GetByIdAsync(id);

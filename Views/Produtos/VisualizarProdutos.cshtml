@@ -4,7 +4,7 @@
 @{
 }
 
-<link href="./css/Produtos/Produtos.css" rel="stylesheet" />
+<link href="~/css/Produtos/Produtos.css" rel="stylesheet" />
 
 <div class="div_titulo">
     <h1>@Model.First().Tipo</h1>
@@ -25,6 +25,7 @@
 
             <div class="div_botao">
                 <a class="btn btn-secondary" asp-controller="Produtos" asp-action="Detalhes" asp-route-id="@item.ProdutoID">Ver Produto</a>
+                @* <button class="btn btn-danger" asp-controller="Produtos" asp-action="Delete" asp-route-produto="@item">Excluir</button> *@
             </div>
 
         </div>

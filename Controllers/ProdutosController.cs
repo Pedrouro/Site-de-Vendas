@@ -45,13 +45,21 @@ namespace SiteDeVendas.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Delete(ProdutosModel produto)
+        public JsonResult Delete(int id)
         {
+            var produto =  _produtosRepository.GetById(id);
+
+            if(produto == null)
+            {
+                return Json(new { success = false, message = "Erro ao remover produto." });
+            }
+            
             _produtosRepository.Delete(produto);
             _produtosRepository.Save();
 
-            return RedirectToAction("Index");
+            return Json(new { success = true, message = "Produto deletado com sucesso." });
         }
+
         public async Task<IActionResult> Detalhes(int id)
         {
             ProdutosModel produto = await _produtosRepository.GetByIdAsync(id);

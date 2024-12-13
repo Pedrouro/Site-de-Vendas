@@ -25,9 +25,43 @@
 
             <div class="div_botao">
                 <a class="btn btn-secondary" asp-controller="Produtos" asp-action="Detalhes" asp-route-id="@item.ProdutoID">Ver Produto</a>
-                @* <button class="btn btn-danger" asp-controller="Produtos" asp-action="Delete" asp-route-produto="@item">Excluir</button> *@
+                <button class="btn btn-danger" onclick="Delete(@item.ProdutoID, '@item.Nome')">Excluir</button>
             </div>
 
         </div>
     }
 </div>
+<script>
+
+    async function Delete(id, nome){
+        
+        console.log(id)
+        if(!confirm("Vai excluir o produto mesmo chefe?")){
+
+            return ;
+        }
+        
+        const response = await fetch('/Produtos/Delete',{
+                method: 'POST',
+                headers:{
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ id : id})
+        });
+        
+        console.log("Resposta do servidor:", response);
+
+        const result = await response.json();
+
+        console.log("Dados do servidor:", result);
+
+        if(result.success){
+            alert(result.message)
+        }
+        else{
+            alert(result.message)
+        }
+
+    }
+
+</script>

@@ -1,0 +1,57 @@
+﻿# Arquivos do Visual Studio
+.vs/
+*.user
+*.suo
+*.vcxproj.user
+*.csproj.user
+
+# Diretórios de build
+bin/
+obj/
+
+# Pacotes do NuGet
+*.nupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+
+# Configurações de backup do Visual Studio
+Backup/
+ReSharperReports/
+
+# Logs, Banco de Dados, e Configurações locais
+*.log
+*.sql
+*.sqlite
+*.mdf
+*.ldf
+
+# Arquivos gerados pelo sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Configurações do IIS Express
+IISExpress/
+
+# Arquivos do Rider
+.idea/
+
+# Diretórios de publicação
+publish/
+wwwroot/
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.pid
+*.seed
+*.pid.lock
+
+# Configurações específicas de usuário
+*.swp
+*.bak
+*.swp*
+
+# Arquivos de cache do NuGet
+.nuget/

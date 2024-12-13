@@ -37,6 +37,11 @@ namespace SiteDeVendas.Repository
             return await _context.Produtos.FirstOrDefaultAsync(x => x.ProdutoID == id);
         }
 
+        public ProdutosModel GetById(int id)
+        {
+            return _context.Produtos.FirstOrDefault(x => x.ProdutoID == id);
+        }
+
         public async Task<IEnumerable<ProdutosModel>> GetByTipoAsync(string tipo)
         {
             return await _context.Produtos.Where(x => x.Tipo.Contains(tipo)).ToListAsync();

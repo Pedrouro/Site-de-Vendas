@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{853E2E10-46B3-408E-9C1E-1E0CE393C314}|SiteDeVendas.csproj|c:\\users\\pedrouro\\desktop\\codigos\\projetos\\site-de-vendas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{853E2E10-46B3-408E-9C1E-1E0CE393C314}|SiteDeVendas.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{853E2E10-46B3-408E-9C1E-1E0CE393C314}|SiteDeVendas.csproj|c:\\users\\pedrouro\\desktop\\codigos\\projetos\\site-de-vendas\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{853E2E10-46B3-408E-9C1E-1E0CE393C314}|SiteDeVendas.csproj|solutionrelative:controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{853E2E10-46B3-408E-9C1E-1E0CE393C314}|SiteDeVendas.csproj|c:\\users\\pedrouro\\desktop\\codigos\\projetos\\site-de-vendas\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{853E2E10-46B3-408E-9C1E-1E0CE393C314}|SiteDeVendas.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{853E2E10-46B3-408E-9C1E-1E0CE393C314}|SiteDeVendas.csproj|c:\\users\\pedrouro\\desktop\\codigos\\projetos\\site-de-vendas\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{853E2E10-46B3-408E-9C1E-1E0CE393C314}|SiteDeVendas.csproj|solutionrelative:controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853E2E10-46B3-408E-9C1E-1E0CE393C314}|SiteDeVendas.csproj|c:\\users\\pedrouro\\desktop\\codigos\\projetos\\site-de-vendas\\repository\\produtosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{853E2E10-46B3-408E-9C1E-1E0CE393C314}|SiteDeVendas.csproj|solutionrelative:repository\\produtosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853E2E10-46B3-408E-9C1E-1E0CE393C314}|SiteDeVendas.csproj|c:\\users\\pedrouro\\desktop\\codigos\\projetos\\site-de-vendas\\interfaces\\iprodutosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{853E2E10-46B3-408E-9C1E-1E0CE393C314}|SiteDeVendas.csproj|solutionrelative:interfaces\\iprodutosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853E2E10-46B3-408E-9C1E-1E0CE393C314}|SiteDeVendas.csproj|c:\\users\\pedrouro\\desktop\\codigos\\projetos\\site-de-vendas\\views\\produtos\\visualizarprodutos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{853E2E10-46B3-408E-9C1E-1E0CE393C314}|SiteDeVendas.csproj|solutionrelative:views\\produtos\\visualizarprodutos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,62 +26,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProdutosRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\Repository\\ProdutosRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\ProdutosRepository.cs",
+              "ToolTip": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\Repository\\ProdutosRepository.cs",
+              "RelativeToolTip": "Repository\\ProdutosRepository.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwCcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T01:35:51.337Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T02:19:33.55Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACIAAAB1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-10T02:16:14.719Z",
+              "Title": "IProdutosRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\Interfaces\\IProdutosRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IProdutosRepository.cs",
+              "ToolTip": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\Interfaces\\IProdutosRepository.cs",
+              "RelativeToolTip": "Interfaces\\IProdutosRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T01:35:01.606Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "VisualizarProdutos.cshtml",
+              "DocumentMoniker": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\Views\\Produtos\\VisualizarProdutos.cshtml",
+              "RelativeDocumentMoniker": "Views\\Produtos\\VisualizarProdutos.cshtml",
+              "ToolTip": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\Views\\Produtos\\VisualizarProdutos.cshtml",
+              "RelativeToolTip": "Views\\Produtos\\VisualizarProdutos.cshtml",
+              "ViewState": "AgIAACYAAAAAAAAAAAAkwCoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T01:47:14.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ProdutosController.cs",
               "DocumentMoniker": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\Controllers\\ProdutosController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProdutosController.cs",
               "ToolTip": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\Controllers\\ProdutosController.cs",
               "RelativeToolTip": "Controllers\\ProdutosController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwC8AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-10T02:14:47.137Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UsuariosController.cs",
-              "DocumentMoniker": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\Controllers\\UsuariosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsuariosController.cs",
-              "ToolTip": "C:\\Users\\Pedrouro\\Desktop\\Codigos\\Projetos\\Site-de-Vendas\\Controllers\\UsuariosController.cs",
-              "RelativeToolTip": "Controllers\\UsuariosController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T02:14:50.977Z",
               "EditorCaption": ""
             }
           ]

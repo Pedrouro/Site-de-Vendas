@@ -6,6 +6,7 @@ namespace SiteDeVendas.Interfaces
     {
         Task<IEnumerable<ProdutosModel>> GetAll();
         Task<ProdutosModel> GetByIdAsync(int id);
+        ProdutosModel GetById(int id);
         Task<IEnumerable<ProdutosModel>> GetByTipoAsync(string tipo);
         bool Add(ProdutosModel produto);
         bool Update(ProdutosModel produto);

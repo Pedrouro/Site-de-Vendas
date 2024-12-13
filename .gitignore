@@ -8,6 +8,7 @@
 # Diretórios de build
 bin/
 obj/
+Migrations
 
 # Pacotes do NuGet
 *.nupkg

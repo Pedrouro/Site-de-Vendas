@@ -2,6 +2,7 @@
 using SiteDeVendas.Data;
 using SiteDeVendas.Interfaces;
 using SiteDeVendas.Models;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace SiteDeVendas.Controllers
 {
@@ -44,26 +45,37 @@ namespace SiteDeVendas.Controllers
             return RedirectToAction("Index");
         }
 
+        public class body
+        {
+            public string nome { get; set; }
+            public int number { get; set; }
+        }
+
         [HttpPost]
-        public JsonResult Delete(int id)
+        public JsonResult Delete(int id, [FromBody] body name)
         {
             var produto =  _produtosRepository.GetById(id);
 
             if(produto == null)
             {
-                return Json(new { success = false, message = "Erro ao remover produto." });
+                return Json(new { success = false, message = $"Erro ao remover produto de id = {id}." });
             }
             
             _produtosRepository.Delete(produto);
             _produtosRepository.Save();
 
-            return Json(new { success = true, message = "Produto deletado com sucesso." });
+            return Json(new { success = true, message = $"Produto {name.nome} deletado com sucesso." });
         }
 
         public async Task<IActionResult> Detalhes(int id)
         {
             ProdutosModel produto = await _produtosRepository.GetByIdAsync(id);
             return View(produto);
+        }
+
+        public IActionResult Gestor()
+        {
+            return View();
         }
     }
 }

@@ -5,6 +5,7 @@
 }
 
 <link href="~/css/Produtos/Produtos.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <div class="div_titulo">
     <h1>@Model.First().Tipo</h1>
@@ -25,7 +26,7 @@
 
             <div class="div_botao">
                 <a class="btn btn-secondary" asp-controller="Produtos" asp-action="Detalhes" asp-route-id="@item.ProdutoID">Ver Produto</a>
-                <button class="btn btn-danger" onclick="Delete(@item.ProdutoID, '@item.Nome')">Excluir</button>
+                <button class="btn btn-danger" onclick="Delete(@item.ProdutoID,'@item.Nome')">Excluir</button>
             </div>
 
         </div>
@@ -33,34 +34,28 @@
 </div>
 <script>
 
-    async function Delete(id, nome){
+    function Delete(id, name){
         
         console.log(id)
-        if(!confirm("Vai excluir o produto mesmo chefe?")){
 
-            return ;
+        if(!confirm(`Deseja excluir ${name}?`)){
+
+            return;
         }
-        
-        const response = await fetch('/Produtos/Delete',{
-                method: 'POST',
-                headers:{
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ id : id})
-        });
-        
-        console.log("Resposta do servidor:", response);
 
-        const result = await response.json();
-
-        console.log("Dados do servidor:", result);
-
-        if(result.success){
-            alert(result.message)
-        }
-        else{
-            alert(result.message)
-        }
+            $.ajax({
+                  url: `/Produtos/Delete/${id}`,
+                  method: "POST",
+                  contentType: "application/json",
+                  dataType: "json",
+                  data: JSON.stringify({nome: name, numero : 55}),
+                  success: function(response){
+                    alert(response.message)
+                  },
+                  error: function(error){
+                    alert(error.message)
+                  }
+            });
 
     }
 

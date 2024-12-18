@@ -1,0 +1,48 @@
+﻿body {
+}
+
+.div_titulo {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.Conteudo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    
+}
+
+.div_item{
+    display: flex;
+    flex-wrap: wrap;
+    align-content:flex-start;
+    justify-content: space-between;
+    width: 20%;
+    height: 160px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 80px;
+    border-style:solid ;
+    border-width: 1px;
+    box-shadow: 10px;
+    border-radius: 5px;
+    
+}
+
+.div_nome{
+    padding: 10px;
+    width: 100%;
+}
+
+.div_preco{
+    width: 100%;
+    margin-left: 10px;
+}
+
+.div_botao{
+/*    width: 50%;*/
+    margin-left: 10px;
+}

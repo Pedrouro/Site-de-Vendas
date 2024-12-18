@@ -8,6 +8,7 @@
 # Diretórios de build
 bin/
 obj/
+
 Migrations
 
 # Pacotes do NuGet
@@ -40,7 +41,6 @@ IISExpress/
 
 # Diretórios de publicação
 publish/
-wwwroot/
 
 # Arquivos temporários
 *.tmp

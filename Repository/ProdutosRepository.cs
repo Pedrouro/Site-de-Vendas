@@ -39,7 +39,7 @@ namespace SiteDeVendas.Repository
 
         public ProdutosModel GetById(int id)
         {
-            return _context.Produtos.FirstOrDefault(x => x.ProdutoID == id);
+            return _context.Produtos.FirstOrDefault(x => x.ProdutoID == id); 
         }
 
         public async Task<IEnumerable<ProdutosModel>> GetByTipoAsync(string tipo)

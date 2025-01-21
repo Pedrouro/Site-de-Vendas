@@ -1,0 +1,79 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+
+.MainDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.GridDiv{
+    width: 80%;
+    display: grid;
+    padding: 1px;
+    grid-template-columns: 80px auto 150px 100px 100px 200px;
+    gap: 1px;
+    background-color: black;
+    border-radius: 2px;
+}
+.ColumnTittle {
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.GridItem{
+    background-color: white;
+    height: 100%;
+/*    margin-top:0;*/
+}
+
+.Button{
+    border: none;
+}
+
+.Number {
+    text-align: center;
+}
+
+.Text{
+    padding-left: 4px;
+}
+
+.ModalShadow{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    display: none;
+    opacity: 20%;
+}
+.MainDivModal {
+    width: 300px;
+    height: 400px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 8px;
+    opacity: 100%;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.ModalDivItem{
+    display: flex;
+    flex-direction: column;
+}
+
+.updateButton{
+    margin-top: 10px;
+}
+
+.ModalActiveDiv {
+    display: flex;
+    align-items: center;
+}

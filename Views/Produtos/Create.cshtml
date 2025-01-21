@@ -6,14 +6,17 @@
 
 <form asp-action="Create" method="post">
     
-    <div>
+    <div>   
         <label asp-for="Nome">Nome: </label><br />
         <input asp-for="Nome" value=""/>
     </div>
 
     <div>
         <label asp-for="Tipo">Tipo: </label><br />
-        <input asp-for="Tipo" value=""/>
+        <select  asp-for="Tipo">
+            <option value="Comidas">Comidas</option>
+            <option value="Tech">Tech</option>
+        </select>
     </div>
 
     <div>
@@ -35,7 +38,7 @@
     </div>
 
     <div class="SubmitDiv">
-        <input type="submit" name="submit" value="cadastrar" />
+        <input type="submit" name="submit" value="Cadastrar" />
     </div>
 
 </form>

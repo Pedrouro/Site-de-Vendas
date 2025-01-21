@@ -1,0 +1,175 @@
+﻿@model IEnumerable<ProdutosModel>
+
+<link href="~/css/Manager/ManageProducts.css" rel="stylesheet" />
+
+
+<h1>Manage Products</h1>
+
+<div class="MainDiv">
+
+
+    <div class="GridDiv">
+
+        <p class="ColumnTittle">ID</p>
+        <p class="ColumnTittle">Name</p>
+        <p class="ColumnTittle">Type</p>
+        <p class="ColumnTittle">Quantity</p>
+        <p class="ColumnTittle">Price</p>
+        <p class="ColumnTittle">Options</p>
+
+        @foreach(var product in Model){
+            <p class="GridItem Number" id="productId">@product.ProdutoID</p>
+            <p class="GridItem Text">@product.Nome</p>
+            <p class="GridItem Text">@product.Tipo</p>
+            <p class="GridItem Number">@product.Quantidade</p>
+            <p class="GridItem Number">R$ @product.Price</p>
+            <button class="GridItem Button" onclick="editProduct('@product.ProdutoID','@product.Nome', '@product.Tipo', @product.Quantidade, '@product.Price', '@product.Ativo')">Edit</button>
+
+        }
+    </div>
+
+
+    <div class="ModalShadow" id="ModalShadow"></div>
+
+        <div class="MainDivModal" id="Modal">
+
+            <h2>Editar Produto</h2>
+            <button onclick="closeModal()">X</button>
+
+            <div>
+
+                <div class="ModalDivItem">
+                    <label>Name</label>
+                <input type="text" name="name" id="productName" value="" />
+                </div>
+
+                <div class="ModalDivItem">
+                    <label>Type</label>
+                    <select id="productType">
+
+                        <option value="Comidas">Comidas</option>
+                        <option value="Tech">Tech</option>
+
+                    </select>
+                </div>
+
+                <div class="ModalDivItem">
+                    <label>Quantity</label>
+                <input type="number" name="name" id="productQuantity" value="" />
+                </div>
+
+                <div class="ModalDivItem">
+                    <label>Price</label>
+                <input type="text" name="name" id="productPrice" value="" />
+                </div>
+
+                <div class="ModalDivItem">
+                    <label>Active</label>
+
+                    <div class="ModalActiveDiv">
+                        <label>True: </label>
+                        <input id="opTrue" type="radio" name="active" value="1" />
+                        <label>False: </label>
+                    <input id="opFalse" type="radio" name="active" value="0" />
+                    </div>
+
+                </div>
+
+            <button class="updateButton" onclick="updateProduct()">Update</button>
+
+            </div>
+
+        </div>
+
+</div>
+
+
+<script>
+
+    const modal = document.getElementById("Modal");
+    const modalShadow = document.getElementById("ModalShadow");
+    let correntProductId = null;
+
+    function editProduct(id, name, type, quantity, price, active){
+
+        modal.style.display = "block";
+        modalShadow.style.display = "block";
+        currentProductId = id;
+
+        var nameInput = document.getElementById("productName");
+        nameInput.value = name;
+
+        var quantityInput = document.getElementById("productQuantity");
+        quantityInput.value = quantity;
+
+        var priceInput = document.getElementById("productPrice");
+        priceInput.value = price
+
+        document.getElementById("productType").value = type
+
+
+        switch(active){
+
+            case "True":
+                document.getElementById("opTrue").checked = true
+                break
+
+            case "False":
+                document.getElementById("opFalse").checked = true
+                break
+        }
+
+
+        console.log(`${name} ${type} ${quantity} ${price} ${active}`)
+        console.log(active)
+    }
+
+    function closeModal(){
+        modal.style.display = "none";
+        modalShadow.style.display = "none";
+    }
+
+    function updateProduct(){
+        
+        var id = currentProductId;
+        var name = document.getElementById("productName").value;
+        var type = document.getElementById("productType").value;
+        var quantity = document.getElementById("productQuantity").value;
+        var price = document.getElementById("productPrice").value.replace(",",".");
+        var active = null;
+
+        var radios = document.getElementsByName("active");
+
+        for(i = 0; i < radios.length; i++){
+            if(radios[i].checked){
+                
+                switch(radios[i].value){
+                    case "1":   active = true
+                    break
+
+                    case "0":   active = false
+                    break
+                }
+            }
+        }
+
+        //console.log(price)
+
+
+        $.ajax({
+            url: "/Manager/updateProduct",
+            method: "POST",
+            contentType: "application/json",
+            data: JSON.stringify({ProdutoID : id, Nome : name, Tipo: type, Quantidade : quantity, Ativo: active, Price: price}),
+            success: function(response){
+
+                console.log(response.message)
+            },
+            error: function(error){
+
+                console.log(error.message)
+            }
+        })
+
+    }
+</script>
